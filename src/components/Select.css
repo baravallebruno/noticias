@@ -1,0 +1,44 @@
+ .content-select select{
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+} 
+
+.content-select select::-ms-expand {
+    display: none;
+}
+
+.content-select {
+    position: relative;
+}
+
+.content-select i {
+    position: absolute;
+	right: 20px;
+	top: calc(50% - 13px);
+	width: 16px;
+	height: 16px;
+	display: block;
+	border-left:4px solid #0277bd;
+	border-bottom:4px solid #0277bd;
+	transform: rotate(-45deg); /* Giramos el cuadrado */
+	transition: all 0.25s ease;
+}
+
+.content-select:hover i{
+	margin-top: 3px;
+}
+
+
+.content-select select {
+    font-family: 'Raleway' sans-serif !important;
+    border-radius: 30px;
+    padding: 10px 25px;
+    height: 3.5rem;
+    font-size: 1.4rem;
+    color: #0277bd;
+    margin-top: 6rem;
+    margin-bottom:1rem;
+    background: white;
+    cursor: pointer;
+} 

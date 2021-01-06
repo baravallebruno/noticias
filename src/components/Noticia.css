@@ -1,0 +1,35 @@
+.btn_block {
+    width: 50%;
+    border-radius: 80px;
+    font-family: 'Raleway' sans-serif;
+    font-style: italic;
+    font-size: 1.0rem;
+    font-weight: bold;
+    box-shadow: none;
+    color:white;
+}
+
+.btn_block:hover {
+    transform: scale(1.02)
+}
+
+.card {
+    margin-bottom: 25px;
+    margin-top: 0;
+    break-inside: avoid;
+    page-break-inside: avoid; 
+}
+
+@media (max-width: 767px) { 
+    .btn_block{
+        width: 100%;
+    }
+}
+        
+/* Móviles en vertical */
+
+@media (max-width: 480px) {
+    .btn_block{
+        width: 100%;
+    }
+}
