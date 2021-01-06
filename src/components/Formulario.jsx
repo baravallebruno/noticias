@@ -6,17 +6,22 @@ import PropTypes from 'prop-types';
 const Formulario = ({guardarCategoria}) => {
 
     const OPCIONES = [
-        {value: 'general', label: 'General'},
-        {value: 'business', label: 'Negocios'},
-        {value: 'entertainment', label: 'Entretenimiento'},
-        {value: 'health', label: 'Salud'},
-        {value: 'science', label: 'Ciencia'},
-        {value: 'sports', label: 'Deportes'},
-        {value: 'technology', label: 'Tecnología'}
+        {value: 'ULTIMAS_NOTICIAS', label: 'Últimas Noticias'},
+        {value: 'LOCALES', label: 'Locales'},
+        {value: 'NACIONALES', label: 'Nacionales'},
+        {value: 'INTERNACIONALES', label: 'Internacionales'},
+        {value: 'ECONOMIA', label: 'Economía'},
+        {value: 'POLITICA', label: 'Política'},
+        {value: 'POLICIALES', label: 'Policiales'},
+        {value: 'SOCIEDAD', label: 'Sociedad'},
+        {value: 'SALUD', label: 'Salud'},
+        {value: 'CULTURA', label: 'Cultura'},
+        {value: 'DEPORTES', label: 'Deportes'},
+        {value: 'TECNOLOGIA', label: 'Tecnología'}
     ]
 
     //utilizar custom hook
-    const [ categoria, SelectNoticias ] = useSelect('general', OPCIONES);
+    const [ categoria, SelectNoticias ] = useSelect('ULTIMAS_NOTICIAS', OPCIONES);
 
 
     //submit al form, pasar categoria a app.jsx

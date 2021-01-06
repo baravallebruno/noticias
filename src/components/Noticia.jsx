@@ -7,12 +7,12 @@ const Noticia = ({noticia}) => {
 
     //extraer los datos
 
-    const { urlToImage, url, title, description, source } = noticia;
+    const { imageUrl, sourceUrl, title, description, provider } = noticia;
 
-    const imagen = (urlToImage) ? 
+    const imagen = (imageUrl) ? 
         <div className="card-image">
-            <img src={urlToImage} alt={title}/>
-            <span className="card-title">{source.name}</span>
+            <img src={imageUrl} alt={title}/>
+            <span className="card-title">{provider.scope} - <small>{provider.name}</small> </span>
         </div>
     :null;
 
@@ -31,7 +31,7 @@ const Noticia = ({noticia}) => {
                 <div className="card-action">
                      <a 
                         className="waves-effect waves-light btn-large btn_block pink accent-3" 
-                        href={url}
+                        href={sourceUrl}
                         target="_blank"
                         rel="noopener noreferrer"
                      >Ver noticia</a>

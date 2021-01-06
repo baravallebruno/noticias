@@ -10,7 +10,7 @@ const ListadoNoticias = ({noticias}) => {
         <div id="galeria">
             {noticias.map(noticia =>(
                <Noticia 
-                    key={noticia.url}
+                    key={noticia._id}
                     noticia={noticia}
                /> 
             ))}
